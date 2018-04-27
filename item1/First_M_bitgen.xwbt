@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\hdu\Desktop\ISE\item1\First_M.ncd
+OUTFILE=C:\Users\hdu\Desktop\ISE\item1\First_M.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\hdu\Desktop\ISE\item1
+LICENSE=WebPack
+USER_INFO=__0_0_0
