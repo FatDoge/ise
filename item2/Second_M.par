@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-stu_31::  Fri Apr 27 19:50:20 2018
+stu_31::  Fri Apr 27 20:07:59 2018
 
 par -w -intstyle ise -ol high -mt off Second_M_map.ncd Second_M.ncd
 Second_M.pcf 
@@ -37,7 +37,7 @@ Slice Logic Utilization:
     Number used as Memory:                       0 out of   2,176    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                     2 out of   2,278    1%
+  Number of occupied Slices:                     3 out of   2,278    1%
   Number of MUXCYs used:                         0 out of   4,556    0%
   Number of LUT Flip Flop pairs used:            5
     Number with an unused Flip Flop:             5 out of       5  100%
@@ -54,6 +54,7 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                        14 out of     232    6%
+    Number of LOCed IOBs:                       14 out of      14  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -92,9 +93,9 @@ Phase  1  : 28 unrouted;      REAL time: 2 secs
 
 Phase  2  : 28 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 34 unrouted;      REAL time: 2 secs 
+Phase  3  : 13 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 34 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  4  : 13 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
 Updating file: Second_M.ncd with current fully routed design.
 

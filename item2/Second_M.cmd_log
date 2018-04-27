@@ -4,3 +4,8 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off Second_M_map.ncd Second_M.ncd Second_M.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Second_M.twx Second_M.ncd -o Second_M.twr Second_M.pcf 
 bitgen -intstyle ise -f Second_M.ut Second_M.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Second_M_C.ucf -p xc6slx16-csg324-3 Second_M.ngc Second_M.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Second_M_map.ncd Second_M.ngd Second_M.pcf 
+par -w -intstyle ise -ol high -mt off Second_M_map.ncd Second_M.ncd Second_M.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Second_M.twx Second_M.ncd -o Second_M.twr Second_M.pcf -ucf Second_M_C.ucf 
+bitgen -intstyle ise -f Second_M.ut Second_M.ncd 

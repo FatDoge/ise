@@ -3,7 +3,8 @@ Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
--n 3 -fastpaths -xml First_M.twx First_M.ncd -o First_M.twr First_M.pcf
+-n 3 -fastpaths -xml First_M.twx First_M.ncd -o First_M.twr First_M.pcf -ucf
+First_M_C.ucf
 
 Design file:              First_M.ncd
 Physical constraint file: First_M.pcf
@@ -35,23 +36,23 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-A              |D              |    6.454|
-A              |E              |    6.262|
-B              |D              |    6.618|
-B              |E              |    6.426|
-C              |D              |    6.273|
-C              |E              |    6.081|
+A              |D              |    7.778|
+A              |E              |    7.592|
+B              |D              |    7.163|
+B              |E              |    6.977|
+C              |D              |    7.080|
+C              |E              |    6.894|
 ---------------+---------------+---------+
 
 
-Analysis completed Fri Apr 27 19:43:18 2018 
+Analysis completed Fri Apr 27 20:05:04 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 222 MB
+Peak Memory Usage: 223 MB
 
 
 

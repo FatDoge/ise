@@ -1,4 +1,12 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Apr 27 19:43:06 2018
+// Written by: Map P.20131013 on Fri Apr 27 20:04:55 2018
 //! **************************************************************************
+
+SCHEMATIC START;
+COMP "A" LOCATE = SITE "T5" LEVEL 1;
+COMP "B" LOCATE = SITE "V8" LEVEL 1;
+COMP "C" LOCATE = SITE "U8" LEVEL 1;
+COMP "D" LOCATE = SITE "T11" LEVEL 1;
+COMP "E" LOCATE = SITE "R11" LEVEL 1;
+SCHEMATIC END;
 

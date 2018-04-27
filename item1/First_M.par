@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-stu_31::  Fri Apr 27 19:43:10 2018
+stu_31::  Fri Apr 27 20:04:57 2018
 
 par -w -intstyle ise -ol high -mt off First_M_map.ncd First_M.ncd First_M.pcf 
 
@@ -53,6 +53,7 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                         5 out of     232    2%
+    Number of LOCed IOBs:                        5 out of       5  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -91,25 +92,25 @@ Phase  1  : 6 unrouted;      REAL time: 2 secs
 
 Phase  2  : 6 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 5 unrouted;      REAL time: 2 secs 
+Phase  3  : 6 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 5 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 6 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
 Updating file: First_M.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
-Total REAL time to Router completion: 3 secs 
-Total CPU time to Router completion: 3 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Total REAL time to Router completion: 2 secs 
+Total CPU time to Router completion: 2 secs 
 
 Partition Implementation Status
 -------------------------------
