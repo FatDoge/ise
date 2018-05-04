@@ -1,0 +1,367 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml S3.twx S3.ncd -o S3.twr S3.pcf
+
+Design file:              S3.ncd
+Physical constraint file: S3.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock ALU_OP<1>
+------------+------------+------------+------------+------------+--------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                          | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)         | Phase  |
+------------+------------+------------+------------+------------+--------------------------+--------+
+AB_SW<0>    |   -0.869(F)|      FAST  |    2.746(F)|      SLOW  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+AB_SW<1>    |   -0.876(F)|      FAST  |    2.735(F)|      SLOW  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+AB_SW<2>    |   -0.965(F)|      FAST  |    2.828(F)|      SLOW  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+ALU_OP<0>   |   -0.802(F)|      FAST  |    2.600(F)|      SLOW  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+------------+------------+------------+------------+------------+--------------------------+--------+
+
+Setup/Hold to clock ALU_OP<2>
+------------+------------+------------+------------+------------+--------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                          | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)         | Phase  |
+------------+------------+------------+------------+------------+--------------------------+--------+
+AB_SW<0>    |   -1.107(F)|      FAST  |    3.000(F)|      SLOW  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+AB_SW<1>    |   -1.114(F)|      FAST  |    2.989(F)|      SLOW  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+AB_SW<2>    |   -1.203(F)|      FAST  |    3.082(F)|      SLOW  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+ALU_OP<0>   |   -1.040(F)|      FAST  |    2.854(F)|      SLOW  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+------------+------------+------------+------------+------------+--------------------------+--------+
+
+Clock ALU_OP<1> to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                          | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)         | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+LED<0>      |        12.124(F)|      SLOW  |         5.065(F)|      FAST  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+OF          |        11.993(F)|      SLOW  |         5.237(F)|      FAST  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+
+Clock ALU_OP<2> to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                          | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)         | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+LED<0>      |        12.378(F)|      SLOW  |         5.303(F)|      FAST  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+OF          |        12.247(F)|      SLOW  |         5.475(F)|      FAST  |ALU_OP[2]_GND_3_o_Mux_13_o|   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+AB_SW<0>       |F<0>           |    6.768|
+AB_SW<0>       |F<1>           |    8.218|
+AB_SW<0>       |F<2>           |    7.146|
+AB_SW<0>       |F<3>           |    8.241|
+AB_SW<0>       |F<4>           |    8.885|
+AB_SW<0>       |F<5>           |    8.597|
+AB_SW<0>       |F<6>           |    8.992|
+AB_SW<0>       |F<7>           |    9.022|
+AB_SW<0>       |F<8>           |    8.853|
+AB_SW<0>       |F<9>           |    8.445|
+AB_SW<0>       |F<10>          |    8.024|
+AB_SW<0>       |F<11>          |    9.062|
+AB_SW<0>       |F<12>          |    8.789|
+AB_SW<0>       |F<13>          |    8.987|
+AB_SW<0>       |F<14>          |    8.485|
+AB_SW<0>       |F<15>          |    8.763|
+AB_SW<0>       |F<16>          |    8.648|
+AB_SW<0>       |F<17>          |    8.416|
+AB_SW<0>       |F<18>          |    8.396|
+AB_SW<0>       |F<19>          |    8.833|
+AB_SW<0>       |F<20>          |    8.505|
+AB_SW<0>       |F<21>          |    8.707|
+AB_SW<0>       |F<22>          |    8.791|
+AB_SW<0>       |F<23>          |    8.738|
+AB_SW<0>       |F<24>          |    8.745|
+AB_SW<0>       |F<25>          |    8.698|
+AB_SW<0>       |F<26>          |    8.481|
+AB_SW<0>       |F<27>          |    8.862|
+AB_SW<0>       |F<28>          |    8.691|
+AB_SW<0>       |F<29>          |    8.853|
+AB_SW<0>       |F<30>          |    8.632|
+AB_SW<0>       |F<31>          |    5.096|
+AB_SW<0>       |LED<0>         |    8.426|
+AB_SW<0>       |LED<1>         |    6.846|
+AB_SW<0>       |LED<2>         |    6.584|
+AB_SW<0>       |LED<3>         |    7.468|
+AB_SW<0>       |LED<4>         |    9.073|
+AB_SW<0>       |LED<5>         |    8.637|
+AB_SW<0>       |LED<6>         |    7.764|
+AB_SW<0>       |LED<7>         |    8.949|
+AB_SW<0>       |OF             |    7.043|
+AB_SW<0>       |ZF             |    9.078|
+AB_SW<1>       |F<0>           |    6.377|
+AB_SW<1>       |F<1>           |    8.044|
+AB_SW<1>       |F<2>           |    6.949|
+AB_SW<1>       |F<3>           |    8.893|
+AB_SW<1>       |F<4>           |    8.211|
+AB_SW<1>       |F<5>           |    8.580|
+AB_SW<1>       |F<6>           |    9.314|
+AB_SW<1>       |F<7>           |    8.727|
+AB_SW<1>       |F<8>           |    8.646|
+AB_SW<1>       |F<9>           |    8.706|
+AB_SW<1>       |F<10>          |    8.848|
+AB_SW<1>       |F<11>          |    8.767|
+AB_SW<1>       |F<12>          |    8.115|
+AB_SW<1>       |F<13>          |    8.313|
+AB_SW<1>       |F<14>          |    8.582|
+AB_SW<1>       |F<15>          |    8.556|
+AB_SW<1>       |F<16>          |    8.219|
+AB_SW<1>       |F<17>          |    8.513|
+AB_SW<1>       |F<18>          |    8.493|
+AB_SW<1>       |F<19>          |    8.626|
+AB_SW<1>       |F<20>          |    8.348|
+AB_SW<1>       |F<21>          |    8.676|
+AB_SW<1>       |F<22>          |    8.496|
+AB_SW<1>       |F<23>          |    8.531|
+AB_SW<1>       |F<24>          |    8.316|
+AB_SW<1>       |F<25>          |    9.185|
+AB_SW<1>       |F<26>          |    8.896|
+AB_SW<1>       |F<27>          |    8.917|
+AB_SW<1>       |F<28>          |    9.178|
+AB_SW<1>       |F<29>          |    8.901|
+AB_SW<1>       |F<30>          |    9.047|
+AB_SW<1>       |F<31>          |    5.440|
+AB_SW<1>       |LED<0>         |    8.035|
+AB_SW<1>       |LED<1>         |    7.849|
+AB_SW<1>       |LED<2>         |    7.854|
+AB_SW<1>       |LED<3>         |    7.963|
+AB_SW<1>       |LED<4>         |    8.323|
+AB_SW<1>       |LED<5>         |    8.403|
+AB_SW<1>       |LED<6>         |    8.295|
+AB_SW<1>       |LED<7>         |    9.248|
+AB_SW<1>       |OF             |    6.476|
+AB_SW<1>       |ZF             |    9.465|
+AB_SW<2>       |F<0>           |    6.548|
+AB_SW<2>       |F<1>           |    7.181|
+AB_SW<2>       |F<2>           |    6.819|
+AB_SW<2>       |F<3>           |    7.969|
+AB_SW<2>       |F<4>           |    7.738|
+AB_SW<2>       |F<5>           |    7.452|
+AB_SW<2>       |F<6>           |    8.443|
+AB_SW<2>       |F<7>           |    7.953|
+AB_SW<2>       |F<8>           |    7.987|
+AB_SW<2>       |F<9>           |    8.978|
+AB_SW<2>       |F<10>          |    8.211|
+AB_SW<2>       |F<11>          |    7.993|
+AB_SW<2>       |F<12>          |    7.642|
+AB_SW<2>       |F<13>          |    7.840|
+AB_SW<2>       |F<14>          |    8.054|
+AB_SW<2>       |F<15>          |    7.897|
+AB_SW<2>       |F<16>          |    8.118|
+AB_SW<2>       |F<17>          |    7.985|
+AB_SW<2>       |F<18>          |    7.965|
+AB_SW<2>       |F<19>          |    7.967|
+AB_SW<2>       |F<20>          |    7.977|
+AB_SW<2>       |F<21>          |    8.093|
+AB_SW<2>       |F<22>          |    7.722|
+AB_SW<2>       |F<23>          |    7.872|
+AB_SW<2>       |F<24>          |    8.215|
+AB_SW<2>       |F<25>          |    7.188|
+AB_SW<2>       |F<26>          |    7.209|
+AB_SW<2>       |F<27>          |    7.579|
+AB_SW<2>       |F<28>          |    7.181|
+AB_SW<2>       |F<29>          |    7.100|
+AB_SW<2>       |F<30>          |    7.360|
+AB_SW<2>       |F<31>          |    5.112|
+AB_SW<2>       |LED<0>         |    8.206|
+AB_SW<2>       |LED<1>         |    6.912|
+AB_SW<2>       |LED<2>         |    6.303|
+AB_SW<2>       |LED<3>         |    6.901|
+AB_SW<2>       |LED<4>         |    8.645|
+AB_SW<2>       |LED<5>         |    6.545|
+AB_SW<2>       |LED<6>         |    7.361|
+AB_SW<2>       |LED<7>         |    8.682|
+AB_SW<2>       |OF             |    6.506|
+AB_SW<2>       |ZF             |   10.052|
+ALU_OP<0>      |F<0>           |    6.392|
+ALU_OP<0>      |F<1>           |   10.436|
+ALU_OP<0>      |F<2>           |    6.608|
+ALU_OP<0>      |F<3>           |    9.779|
+ALU_OP<0>      |F<4>           |   10.603|
+ALU_OP<0>      |F<5>           |   10.557|
+ALU_OP<0>      |F<6>           |   10.555|
+ALU_OP<0>      |F<7>           |   10.585|
+ALU_OP<0>      |F<8>           |   10.416|
+ALU_OP<0>      |F<9>           |   10.427|
+ALU_OP<0>      |F<10>          |    9.734|
+ALU_OP<0>      |F<11>          |   10.625|
+ALU_OP<0>      |F<12>          |   10.507|
+ALU_OP<0>      |F<13>          |   10.705|
+ALU_OP<0>      |F<14>          |   10.048|
+ALU_OP<0>      |F<15>          |   10.326|
+ALU_OP<0>      |F<16>          |   10.218|
+ALU_OP<0>      |F<17>          |    9.979|
+ALU_OP<0>      |F<18>          |    9.959|
+ALU_OP<0>      |F<19>          |   10.396|
+ALU_OP<0>      |F<20>          |   10.325|
+ALU_OP<0>      |F<21>          |   10.270|
+ALU_OP<0>      |F<22>          |   10.354|
+ALU_OP<0>      |F<23>          |   10.301|
+ALU_OP<0>      |F<24>          |   10.315|
+ALU_OP<0>      |F<25>          |   10.261|
+ALU_OP<0>      |F<26>          |   10.044|
+ALU_OP<0>      |F<27>          |   10.425|
+ALU_OP<0>      |F<28>          |   10.254|
+ALU_OP<0>      |F<29>          |   10.416|
+ALU_OP<0>      |F<30>          |   10.195|
+ALU_OP<0>      |F<31>          |    5.228|
+ALU_OP<0>      |LED<0>         |    9.836|
+ALU_OP<0>      |LED<1>         |    9.705|
+ALU_OP<0>      |LED<2>         |    9.682|
+ALU_OP<0>      |LED<3>         |    9.805|
+ALU_OP<0>      |LED<4>         |   10.302|
+ALU_OP<0>      |LED<5>         |   10.195|
+ALU_OP<0>      |LED<6>         |    9.660|
+ALU_OP<0>      |LED<7>         |   10.137|
+ALU_OP<0>      |OF             |    8.147|
+ALU_OP<0>      |ZF             |    9.299|
+ALU_OP<1>      |F<0>           |    6.318|
+ALU_OP<1>      |F<1>           |    9.771|
+ALU_OP<1>      |F<2>           |    6.472|
+ALU_OP<1>      |F<3>           |    9.392|
+ALU_OP<1>      |F<4>           |    9.938|
+ALU_OP<1>      |F<5>           |    9.892|
+ALU_OP<1>      |F<6>           |    9.890|
+ALU_OP<1>      |F<7>           |    9.920|
+ALU_OP<1>      |F<8>           |    9.751|
+ALU_OP<1>      |F<9>           |    9.762|
+ALU_OP<1>      |F<10>          |    9.347|
+ALU_OP<1>      |F<11>          |    9.960|
+ALU_OP<1>      |F<12>          |    9.842|
+ALU_OP<1>      |F<13>          |   10.040|
+ALU_OP<1>      |F<14>          |    9.383|
+ALU_OP<1>      |F<15>          |    9.661|
+ALU_OP<1>      |F<16>          |    9.553|
+ALU_OP<1>      |F<17>          |    9.314|
+ALU_OP<1>      |F<18>          |    9.294|
+ALU_OP<1>      |F<19>          |    9.731|
+ALU_OP<1>      |F<20>          |    9.660|
+ALU_OP<1>      |F<21>          |    9.605|
+ALU_OP<1>      |F<22>          |    9.689|
+ALU_OP<1>      |F<23>          |    9.636|
+ALU_OP<1>      |F<24>          |    9.650|
+ALU_OP<1>      |F<25>          |    9.684|
+ALU_OP<1>      |F<26>          |    9.395|
+ALU_OP<1>      |F<27>          |    9.760|
+ALU_OP<1>      |F<28>          |    9.677|
+ALU_OP<1>      |F<29>          |    9.751|
+ALU_OP<1>      |F<30>          |    9.546|
+ALU_OP<1>      |F<31>          |    5.370|
+ALU_OP<1>      |LED<0>         |    9.739|
+ALU_OP<1>      |LED<1>         |    9.598|
+ALU_OP<1>      |LED<2>         |    9.369|
+ALU_OP<1>      |LED<3>         |    9.708|
+ALU_OP<1>      |LED<4>         |    9.915|
+ALU_OP<1>      |LED<5>         |    9.530|
+ALU_OP<1>      |LED<6>         |    9.553|
+ALU_OP<1>      |LED<7>         |   10.040|
+ALU_OP<1>      |OF             |    7.716|
+ALU_OP<1>      |ZF             |    9.419|
+ALU_OP<2>      |F<0>           |    6.316|
+ALU_OP<2>      |F<1>           |    9.666|
+ALU_OP<2>      |F<2>           |    6.695|
+ALU_OP<2>      |F<3>           |    9.534|
+ALU_OP<2>      |F<4>           |    9.833|
+ALU_OP<2>      |F<5>           |    9.787|
+ALU_OP<2>      |F<6>           |    9.955|
+ALU_OP<2>      |F<7>           |    9.815|
+ALU_OP<2>      |F<8>           |    9.646|
+ALU_OP<2>      |F<9>           |    9.657|
+ALU_OP<2>      |F<10>          |    9.489|
+ALU_OP<2>      |F<11>          |    9.855|
+ALU_OP<2>      |F<12>          |    9.737|
+ALU_OP<2>      |F<13>          |    9.935|
+ALU_OP<2>      |F<14>          |    9.278|
+ALU_OP<2>      |F<15>          |    9.556|
+ALU_OP<2>      |F<16>          |    9.448|
+ALU_OP<2>      |F<17>          |    9.209|
+ALU_OP<2>      |F<18>          |    9.189|
+ALU_OP<2>      |F<19>          |    9.626|
+ALU_OP<2>      |F<20>          |    9.555|
+ALU_OP<2>      |F<21>          |    9.500|
+ALU_OP<2>      |F<22>          |    9.584|
+ALU_OP<2>      |F<23>          |    9.531|
+ALU_OP<2>      |F<24>          |    9.545|
+ALU_OP<2>      |F<25>          |    9.826|
+ALU_OP<2>      |F<26>          |    9.537|
+ALU_OP<2>      |F<27>          |    9.655|
+ALU_OP<2>      |F<28>          |    9.819|
+ALU_OP<2>      |F<29>          |    9.646|
+ALU_OP<2>      |F<30>          |    9.688|
+ALU_OP<2>      |F<31>          |    5.261|
+ALU_OP<2>      |LED<0>         |    9.936|
+ALU_OP<2>      |LED<1>         |    9.793|
+ALU_OP<2>      |LED<2>         |    9.564|
+ALU_OP<2>      |LED<3>         |    9.905|
+ALU_OP<2>      |LED<4>         |   10.057|
+ALU_OP<2>      |LED<5>         |    9.425|
+ALU_OP<2>      |LED<6>         |    9.748|
+ALU_OP<2>      |LED<7>         |   10.237|
+ALU_OP<2>      |OF             |    7.695|
+ALU_OP<2>      |ZF             |    9.358|
+F_LED_SW<0>    |LED<0>         |    7.593|
+F_LED_SW<0>    |LED<1>         |    7.791|
+F_LED_SW<0>    |LED<2>         |    8.264|
+F_LED_SW<0>    |LED<3>         |    8.528|
+F_LED_SW<0>    |LED<4>         |    8.852|
+F_LED_SW<0>    |LED<5>         |    7.546|
+F_LED_SW<0>    |LED<6>         |    8.180|
+F_LED_SW<0>    |LED<7>         |    9.234|
+F_LED_SW<1>    |LED<0>         |    7.549|
+F_LED_SW<1>    |LED<1>         |    7.394|
+F_LED_SW<1>    |LED<2>         |    7.936|
+F_LED_SW<1>    |LED<3>         |    8.506|
+F_LED_SW<1>    |LED<4>         |    8.832|
+F_LED_SW<1>    |LED<5>         |    7.892|
+F_LED_SW<1>    |LED<6>         |    8.039|
+F_LED_SW<1>    |LED<7>         |    8.948|
+F_LED_SW<2>    |LED<0>         |    7.766|
+F_LED_SW<2>    |LED<1>         |    7.648|
+F_LED_SW<2>    |LED<2>         |    8.224|
+F_LED_SW<2>    |LED<3>         |    7.762|
+F_LED_SW<2>    |LED<4>         |    8.586|
+F_LED_SW<2>    |LED<5>         |    8.366|
+F_LED_SW<2>    |LED<6>         |    8.247|
+F_LED_SW<2>    |LED<7>         |    8.274|
+---------------+---------------+---------+
+
+
+Analysis completed Fri May 04 20:36:12 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5004 MB
+
+
+

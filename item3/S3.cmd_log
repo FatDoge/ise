@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/fatdoge/Desktop/ise/item3/S3.xst" -ofn "C:/Users/fatdoge/Desktop/ise/item3/S3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 S3.ngc S3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o S3_map.ncd S3.ngd S3.pcf 
+par -w -intstyle ise -ol high -mt off S3_map.ncd S3.ncd S3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml S3.twx S3.ncd -o S3.twr S3.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 S3.ngc S3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o S3_map.ncd S3.ngd S3.pcf 
+par -w -intstyle ise -ol high -mt off S3_map.ncd S3.ncd S3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml S3.twx S3.ncd -o S3.twr S3.pcf 
+bitgen -intstyle ise -f S3.ut S3.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc S3.ucf -p xc7a100t-csg324-3 S3.ngc S3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o S3_map.ncd S3.ngd S3.pcf 
+xst -intstyle ise -ifn "C:/Users/fatdoge/Desktop/ise/item3/S3.xst" -ofn "C:/Users/fatdoge/Desktop/ise/item3/S3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc S3.ucf -p xc7a100t-csg324-3 S3.ngc S3.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o S3_map.ncd S3.ngd S3.pcf 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o S3_map.ncd S3.ngd S3.pcf 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o S3_map.ncd S3.ngd S3.pcf 

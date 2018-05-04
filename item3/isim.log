@@ -1,0 +1,13 @@
+ISim log file
+Running: C:\Users\fatdoge\Desktop\ise\item3\Third_Test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/fatdoge/Desktop/ise/item3/Third_Test_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "C:/Users/fatdoge/Desktop/ise/item3/Third_Test.v" Line 35.  For instance Third_Test/uut/, width 32 of formal port F is not equal to width 1 of actual signal F.
+WARNING: File "C:/Users/fatdoge/Desktop/ise/item3/Third_Test.v" Line 36.  For instance Third_Test/uut/, width 8 of formal port LED is not equal to width 1 of actual signal LED.
+WARNING: File "C:/Users/fatdoge/Desktop/ise/item3/Third_Test.v" Line 30.  For instance Third_Test/uut/, width 3 of formal port F_LED_SW is not equal to width 1 of actual variable F_LED_SW. 
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
