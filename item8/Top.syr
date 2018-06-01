@@ -1,0 +1,692 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\ISEP2\Ex8_2\ipcore_dir\zl.v" into library work
+Parsing module <zl>.
+Analyzing Verilog file "E:\ISEP2\Ex8_2\Reg.v" into library work
+Parsing module <Reg>.
+Analyzing Verilog file "E:\ISEP2\Ex8_2\qzl.v" into library work
+Parsing module <qzl>.
+Analyzing Verilog file "E:\ISEP2\Ex8_2\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "E:\ISEP2\Ex8_2\CPU.v" into library work
+Parsing module <CPU>.
+Analyzing Verilog file "E:\ISEP2\Ex8_2\Top.v" into library work
+Parsing module <Top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Top>.
+
+Elaborating module <CPU>.
+
+Elaborating module <qzl>.
+
+Elaborating module <zl>.
+WARNING:HDLCompiler:1499 - "E:\ISEP2\Ex8_2\ipcore_dir\zl.v" Line 39: Empty module <zl> remains a black box.
+WARNING:HDLCompiler:1127 - "E:\ISEP2\Ex8_2\CPU.v" Line 30: Assignment to op ignored, since the identifier is never used
+
+Elaborating module <Reg>.
+
+Elaborating module <ALU>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top>.
+    Related source file is "E:\ISEP2\Ex8_2\Top.v".
+    Found 8-bit 7-to-1 multiplexer for signal <LED> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Top> synthesized.
+
+Synthesizing Unit <CPU>.
+    Related source file is "E:\ISEP2\Ex8_2\CPU.v".
+INFO:Xst:3210 - "E:\ISEP2\Ex8_2\CPU.v" line 30: Output port <op> of the instance <x1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <CPU> synthesized.
+
+Synthesizing Unit <qzl>.
+    Related source file is "E:\ISEP2\Ex8_2\qzl.v".
+    Found 32-bit register for signal <PC>.
+    Found 32-bit adder for signal <PC[31]_GND_3_o_add_1_OUT> created at line 32.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <qzl> synthesized.
+
+Synthesizing Unit <Reg>.
+    Related source file is "E:\ISEP2\Ex8_2\Reg.v".
+    Found 1024-bit register for signal <n0043[1023:0]>.
+    Found 32-bit 32-to-1 multiplexer for signal <RDA> created at line 41.
+    Found 32-bit 32-to-1 multiplexer for signal <RDB> created at line 42.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  34 Multiplexer(s).
+Unit <Reg> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:\ISEP2\Ex8_2\ALU.v".
+    Found 32-bit subtractor for signal <A[31]_B[31]_sub_104_OUT> created at line 74.
+    Found 32-bit adder for signal <A[31]_B[31]_add_5_OUT> created at line 55.
+    Found 2-bit adder for signal <n0409> created at line 59.
+    Found 2-bit adder for signal <n0576> created at line 59.
+    Found 2-bit adder for signal <BUS_0003_GND_6_o_add_9_OUT> created at line 59.
+    Found 2-bit adder for signal <n0582> created at line 59.
+    Found 2-bit adder for signal <BUS_0005_GND_6_o_add_12_OUT> created at line 59.
+    Found 2-bit adder for signal <n0588> created at line 59.
+    Found 2-bit adder for signal <BUS_0007_GND_6_o_add_15_OUT> created at line 59.
+    Found 2-bit adder for signal <n0594> created at line 59.
+    Found 2-bit adder for signal <BUS_0009_GND_6_o_add_18_OUT> created at line 59.
+    Found 2-bit adder for signal <n0600> created at line 59.
+    Found 2-bit adder for signal <BUS_0011_GND_6_o_add_21_OUT> created at line 59.
+    Found 2-bit adder for signal <n0606> created at line 59.
+    Found 2-bit adder for signal <BUS_0013_GND_6_o_add_24_OUT> created at line 59.
+    Found 2-bit adder for signal <n0612> created at line 59.
+    Found 2-bit adder for signal <BUS_0015_GND_6_o_add_27_OUT> created at line 59.
+    Found 2-bit adder for signal <n0618> created at line 59.
+    Found 2-bit adder for signal <BUS_0017_GND_6_o_add_30_OUT> created at line 59.
+    Found 2-bit adder for signal <n0624> created at line 59.
+    Found 2-bit adder for signal <BUS_0019_GND_6_o_add_33_OUT> created at line 59.
+    Found 2-bit adder for signal <n0630> created at line 59.
+    Found 2-bit adder for signal <BUS_0021_GND_6_o_add_36_OUT> created at line 59.
+    Found 2-bit adder for signal <n0636> created at line 59.
+    Found 2-bit adder for signal <BUS_0023_GND_6_o_add_39_OUT> created at line 59.
+    Found 2-bit adder for signal <n0642> created at line 59.
+    Found 2-bit adder for signal <BUS_0025_GND_6_o_add_42_OUT> created at line 59.
+    Found 2-bit adder for signal <n0648> created at line 59.
+    Found 2-bit adder for signal <BUS_0027_GND_6_o_add_45_OUT> created at line 59.
+    Found 2-bit adder for signal <n0654> created at line 59.
+    Found 2-bit adder for signal <BUS_0029_GND_6_o_add_48_OUT> created at line 59.
+    Found 2-bit adder for signal <n0660> created at line 59.
+    Found 2-bit adder for signal <BUS_0031_GND_6_o_add_51_OUT> created at line 59.
+    Found 2-bit adder for signal <n0666> created at line 59.
+    Found 2-bit adder for signal <BUS_0033_GND_6_o_add_54_OUT> created at line 59.
+    Found 2-bit adder for signal <n0672> created at line 59.
+    Found 2-bit adder for signal <BUS_0035_GND_6_o_add_57_OUT> created at line 59.
+    Found 2-bit adder for signal <n0678> created at line 59.
+    Found 2-bit adder for signal <BUS_0037_GND_6_o_add_60_OUT> created at line 59.
+    Found 2-bit adder for signal <n0684> created at line 59.
+    Found 2-bit adder for signal <BUS_0039_GND_6_o_add_63_OUT> created at line 59.
+    Found 2-bit adder for signal <n0690> created at line 59.
+    Found 2-bit adder for signal <BUS_0041_GND_6_o_add_66_OUT> created at line 59.
+    Found 2-bit adder for signal <n0696> created at line 59.
+    Found 2-bit adder for signal <BUS_0043_GND_6_o_add_69_OUT> created at line 59.
+    Found 2-bit adder for signal <n0702> created at line 59.
+    Found 2-bit adder for signal <BUS_0045_GND_6_o_add_72_OUT> created at line 59.
+    Found 2-bit adder for signal <n0708> created at line 59.
+    Found 2-bit adder for signal <BUS_0047_GND_6_o_add_75_OUT> created at line 59.
+    Found 2-bit adder for signal <n0714> created at line 59.
+    Found 2-bit adder for signal <BUS_0049_GND_6_o_add_78_OUT> created at line 59.
+    Found 2-bit adder for signal <n0720> created at line 59.
+    Found 2-bit adder for signal <BUS_0051_GND_6_o_add_81_OUT> created at line 59.
+    Found 2-bit adder for signal <n0726> created at line 59.
+    Found 2-bit adder for signal <BUS_0053_GND_6_o_add_84_OUT> created at line 59.
+    Found 2-bit adder for signal <n0732> created at line 59.
+    Found 2-bit adder for signal <BUS_0055_GND_6_o_add_87_OUT> created at line 59.
+    Found 2-bit adder for signal <n0738> created at line 59.
+    Found 2-bit adder for signal <BUS_0057_GND_6_o_add_90_OUT> created at line 59.
+    Found 2-bit adder for signal <n0744> created at line 59.
+    Found 2-bit adder for signal <BUS_0059_GND_6_o_add_93_OUT> created at line 59.
+    Found 2-bit adder for signal <n0750> created at line 59.
+    Found 2-bit adder for signal <BUS_0061_GND_6_o_add_96_OUT> created at line 59.
+    Found 2-bit adder for signal <n0756> created at line 59.
+    Found 2-bit adder for signal <BUS_0063_GND_6_o_add_99_OUT> created at line 59.
+    Found 32-bit adder for signal <B[31]_GND_6_o_add_102_OUT> created at line 73.
+    Found 2-bit adder for signal <n0472> created at line 78.
+    Found 2-bit adder for signal <n0767> created at line 78.
+    Found 2-bit adder for signal <BUS_0067_GND_6_o_add_107_OUT> created at line 78.
+    Found 2-bit adder for signal <n0773> created at line 78.
+    Found 2-bit adder for signal <BUS_0069_GND_6_o_add_110_OUT> created at line 78.
+    Found 2-bit adder for signal <n0779> created at line 78.
+    Found 2-bit adder for signal <BUS_0071_GND_6_o_add_113_OUT> created at line 78.
+    Found 2-bit adder for signal <n0785> created at line 78.
+    Found 2-bit adder for signal <BUS_0073_GND_6_o_add_116_OUT> created at line 78.
+    Found 2-bit adder for signal <n0791> created at line 78.
+    Found 2-bit adder for signal <BUS_0075_GND_6_o_add_119_OUT> created at line 78.
+    Found 2-bit adder for signal <n0797> created at line 78.
+    Found 2-bit adder for signal <BUS_0077_GND_6_o_add_122_OUT> created at line 78.
+    Found 2-bit adder for signal <n0803> created at line 78.
+    Found 2-bit adder for signal <BUS_0079_GND_6_o_add_125_OUT> created at line 78.
+    Found 2-bit adder for signal <n0809> created at line 78.
+    Found 2-bit adder for signal <BUS_0081_GND_6_o_add_128_OUT> created at line 78.
+    Found 2-bit adder for signal <n0815> created at line 78.
+    Found 2-bit adder for signal <BUS_0083_GND_6_o_add_131_OUT> created at line 78.
+    Found 2-bit adder for signal <n0821> created at line 78.
+    Found 2-bit adder for signal <BUS_0085_GND_6_o_add_134_OUT> created at line 78.
+    Found 2-bit adder for signal <n0827> created at line 78.
+    Found 2-bit adder for signal <BUS_0087_GND_6_o_add_137_OUT> created at line 78.
+    Found 2-bit adder for signal <n0833> created at line 78.
+    Found 2-bit adder for signal <BUS_0089_GND_6_o_add_140_OUT> created at line 78.
+    Found 2-bit adder for signal <n0839> created at line 78.
+    Found 2-bit adder for signal <BUS_0091_GND_6_o_add_143_OUT> created at line 78.
+    Found 2-bit adder for signal <n0845> created at line 78.
+    Found 2-bit adder for signal <BUS_0093_GND_6_o_add_146_OUT> created at line 78.
+    Found 2-bit adder for signal <n0851> created at line 78.
+    Found 2-bit adder for signal <BUS_0095_GND_6_o_add_149_OUT> created at line 78.
+    Found 2-bit adder for signal <n0857> created at line 78.
+    Found 2-bit adder for signal <BUS_0097_GND_6_o_add_152_OUT> created at line 78.
+    Found 2-bit adder for signal <n0863> created at line 78.
+    Found 2-bit adder for signal <BUS_0099_GND_6_o_add_155_OUT> created at line 78.
+    Found 2-bit adder for signal <n0869> created at line 78.
+    Found 2-bit adder for signal <BUS_0101_GND_6_o_add_158_OUT> created at line 78.
+    Found 2-bit adder for signal <n0875> created at line 78.
+    Found 2-bit adder for signal <BUS_0103_GND_6_o_add_161_OUT> created at line 78.
+    Found 2-bit adder for signal <n0881> created at line 78.
+    Found 2-bit adder for signal <BUS_0105_GND_6_o_add_164_OUT> created at line 78.
+    Found 2-bit adder for signal <n0887> created at line 78.
+    Found 2-bit adder for signal <BUS_0107_GND_6_o_add_167_OUT> created at line 78.
+    Found 2-bit adder for signal <n0893> created at line 78.
+    Found 2-bit adder for signal <BUS_0109_GND_6_o_add_170_OUT> created at line 78.
+    Found 2-bit adder for signal <n0899> created at line 78.
+    Found 2-bit adder for signal <BUS_0111_GND_6_o_add_173_OUT> created at line 78.
+    Found 2-bit adder for signal <n0905> created at line 78.
+    Found 2-bit adder for signal <BUS_0113_GND_6_o_add_176_OUT> created at line 78.
+    Found 2-bit adder for signal <n0911> created at line 78.
+    Found 2-bit adder for signal <BUS_0115_GND_6_o_add_179_OUT> created at line 78.
+    Found 2-bit adder for signal <n0917> created at line 78.
+    Found 2-bit adder for signal <BUS_0117_GND_6_o_add_182_OUT> created at line 78.
+    Found 2-bit adder for signal <n0923> created at line 78.
+    Found 2-bit adder for signal <BUS_0119_GND_6_o_add_185_OUT> created at line 78.
+    Found 2-bit adder for signal <n0929> created at line 78.
+    Found 2-bit adder for signal <BUS_0121_GND_6_o_add_188_OUT> created at line 78.
+    Found 2-bit adder for signal <n0935> created at line 78.
+    Found 2-bit adder for signal <BUS_0123_GND_6_o_add_191_OUT> created at line 78.
+    Found 2-bit adder for signal <n0941> created at line 78.
+    Found 2-bit adder for signal <BUS_0125_GND_6_o_add_194_OUT> created at line 78.
+    Found 2-bit adder for signal <n0947> created at line 78.
+    Found 2-bit adder for signal <BUS_0127_GND_6_o_add_197_OUT> created at line 78.
+    Found 32-bit shifter logical left for signal <B[31]_A[31]_shift_left_201_OUT> created at line 104
+    Found 32-bit 8-to-1 multiplexer for signal <F> created at line 32.
+    Found 32-bit comparator greater for signal <A[31]_B[31]_LessThan_200_o> created at line 92
+    Summary:
+	inferred 128 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  41 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 129
+ 2-bit adder                                           : 126
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 2
+ 1024-bit register                                     : 1
+ 32-bit register                                       : 1
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 76
+ 1-bit 2-to-1 multiplexer                              : 34
+ 32-bit 2-to-1 multiplexer                             : 39
+ 32-bit 32-to-1 multiplexer                            : 2
+ 8-bit 7-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 32-bit xor2                                           : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/zl.ngc>.
+Loading core <zl> for timing and area information for instance <ex>.
+
+Synthesizing (advanced) Unit <qzl>.
+The following registers are absorbed into accumulator <PC>: 1 register on signal <PC>.
+Unit <qzl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 66
+ 2-bit adder                                           : 2
+ 2-bit adder carry in                                  : 62
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+# Accumulators                                         : 1
+ 32-bit up accumulator                                 : 1
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 76
+ 1-bit 2-to-1 multiplexer                              : 34
+ 32-bit 2-to-1 multiplexer                             : 39
+ 32-bit 32-to-1 multiplexer                            : 2
+ 8-bit 7-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <x1/PC_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_8> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_9> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_10> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_11> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_12> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_13> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_14> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_15> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_16> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_17> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_18> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_19> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_20> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_21> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_22> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_23> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_24> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_25> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_26> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_27> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_28> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_29> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_30> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <x1/PC_31> of sequential type is unconnected in block <CPU>.
+
+Optimizing unit <Top> ...
+
+Optimizing unit <CPU> ...
+
+Optimizing unit <Reg> ...
+
+Optimizing unit <ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 31.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1030
+ Flip-Flops                                            : 1030
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2340
+#      GND                         : 2
+#      INV                         : 33
+#      LUT1                        : 5
+#      LUT2                        : 23
+#      LUT3                        : 381
+#      LUT4                        : 49
+#      LUT5                        : 538
+#      LUT6                        : 1068
+#      MUXCY                       : 87
+#      MUXF7                       : 82
+#      VCC                         : 2
+#      XORCY                       : 70
+# FlipFlops/Latches                : 1030
+#      FDC                         : 6
+#      FDCE                        : 1024
+# RAMS                             : 1
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 4
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1030  out of  18224     5%  
+ Number of Slice LUTs:                 2097  out of   9112    23%  
+    Number used as Logic:              2097  out of   9112    23%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2099
+   Number with an unused Flip Flop:    1069  out of   2099    50%  
+   Number with an unused LUT:             2  out of   2099     0%  
+   Number of fully used LUT-FF pairs:  1028  out of   2099    48%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 1031  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 11.278ns (Maximum Frequency: 88.664MHz)
+   Minimum input arrival time before clock: 3.866ns
+   Maximum output required time after clock: 26.837ns
+   Maximum combinational path delay: 8.859ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 11.278ns (frequency: 88.664MHz)
+  Total number of paths / destination ports: 6394662 / 2066
+-------------------------------------------------------------------------
+Delay:               11.278ns (Levels of Logic = 9)
+  Source:            x4/x1/ex/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (RAM)
+  Destination:       x4/x2/REG_31_1023 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: x4/x1/ex/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram to x4/x2/REG_31_1023
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB8BWER:CLKBRDCLK->DOBDO5  256   1.850   2.171  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (douta<21>)
+     end scope: 'x4/x1/ex:douta<21>'
+     LUT6:I4->O            1   0.203   0.827  x4/x2/Mmux_RDA_834 (x4/x2/Mmux_RDA_834)
+     LUT6:I2->O            1   0.203   0.000  x4/x2/Mmux_RDA_311 (x4/x2/Mmux_RDA_311)
+     MUXF7:I1->O          43   0.140   1.553  x4/x2/Mmux_RDA_2_f7_10 (x4/outa<1>)
+     LUT6:I4->O            5   0.203   0.962  x4/x3/Sh151 (x4/x3/Sh15)
+     LUT6:I2->O            1   0.203   0.580  x4/x3/Sh471_1 (x4/x3/Sh471)
+     LUT5:I4->O            2   0.205   0.617  x4/x3/Mmux_F7254 (x4/x3/Mmux_F7254)
+     LUT6:I5->O           18   0.205   1.050  x4/x3/Mmux_F7255 (tmp<31>)
+     LUT3:I2->O            1   0.205   0.000  x4/x2/Mmux_REG[0][31]_WD[31]_mux_32_OUT251 (x4/x2/REG[0][31]_WD[31]_mux_32_OUT<31>)
+     FDCE:D                    0.102          x4/x2/REG_31_1023
+    ----------------------------------------
+    Total                     11.278ns (3.519ns logic, 7.759ns route)
+                                       (31.2% logic, 68.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 1030 / 1030
+-------------------------------------------------------------------------
+Offset:              3.866ns (Levels of Logic = 1)
+  Source:            Rst (PAD)
+  Destination:       x4/x1/PC_7 (FF)
+  Destination Clock: Clk falling
+
+  Data Path: Rst to x4/x1/PC_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1030   1.222   2.214  Rst_IBUF (Rst_IBUF)
+     FDC:CLR                   0.430          x4/x1/PC_2
+    ----------------------------------------
+    Total                      3.866ns (1.652ns logic, 2.214ns route)
+                                       (42.7% logic, 57.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 429094 / 8
+-------------------------------------------------------------------------
+Offset:              26.837ns (Levels of Logic = 27)
+  Source:            x4/x1/ex/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (RAM)
+  Destination:       LED<7> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: x4/x1/ex/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram to LED<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB8BWER:CLKBRDCLK->DOBDO5  256   1.850   2.171  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (douta<21>)
+     end scope: 'x4/x1/ex:douta<21>'
+     LUT6:I4->O            1   0.203   0.827  x4/x2/Mmux_RDA_834 (x4/x2/Mmux_RDA_834)
+     LUT6:I2->O            1   0.203   0.000  x4/x2/Mmux_RDA_311 (x4/x2/Mmux_RDA_311)
+     MUXF7:I1->O          43   0.140   1.696  x4/x2/Mmux_RDA_2_f7_10 (x4/outa<1>)
+     LUT4:I0->O            1   0.203   0.684  x4/x3/BUS_0007_PWR_7_o_equal_17_o<1>_SW0 (N62)
+     LUT5:I3->O            1   0.203   0.580  x4/x3/BUS_0007_PWR_7_o_equal_17_o<1> (x4/x3/BUS_0007_PWR_7_o_equal_17_o)
+     LUT3:I2->O            1   0.205   0.580  x4/x3/BUS_0013_PWR_7_o_equal_26_o<1>_SW4 (N102)
+     LUT5:I4->O            1   0.205   0.580  x4/x3/BUS_0013_PWR_7_o_equal_26_o<1> (x4/x3/BUS_0013_PWR_7_o_equal_26_o)
+     LUT3:I2->O            1   0.205   0.580  x4/x3/BUS_0019_PWR_7_o_equal_35_o<1>_SW4 (N100)
+     LUT5:I4->O            1   0.205   0.580  x4/x3/BUS_0019_PWR_7_o_equal_35_o<1> (x4/x3/BUS_0019_PWR_7_o_equal_35_o)
+     LUT3:I2->O            1   0.205   0.580  x4/x3/BUS_0025_PWR_7_o_equal_44_o<1>_SW4 (N98)
+     LUT5:I4->O            1   0.205   0.580  x4/x3/BUS_0025_PWR_7_o_equal_44_o<1> (x4/x3/BUS_0025_PWR_7_o_equal_44_o)
+     LUT3:I2->O            1   0.205   0.580  x4/x3/BUS_0031_PWR_7_o_equal_53_o<1>_SW4 (N96)
+     LUT5:I4->O            1   0.205   0.580  x4/x3/BUS_0031_PWR_7_o_equal_53_o<1> (x4/x3/BUS_0031_PWR_7_o_equal_53_o)
+     LUT3:I2->O            1   0.205   0.580  x4/x3/BUS_0037_PWR_7_o_equal_62_o<1>_SW4 (N94)
+     LUT5:I4->O            1   0.205   0.580  x4/x3/BUS_0037_PWR_7_o_equal_62_o<1> (x4/x3/BUS_0037_PWR_7_o_equal_62_o)
+     LUT3:I2->O            1   0.205   0.580  x4/x3/BUS_0043_PWR_7_o_equal_71_o<1>_SW4 (N90)
+     LUT5:I4->O            1   0.205   0.580  x4/x3/BUS_0043_PWR_7_o_equal_71_o<1> (x4/x3/BUS_0043_PWR_7_o_equal_71_o)
+     LUT3:I2->O            1   0.205   0.580  x4/x3/BUS_0049_PWR_7_o_equal_80_o<1>_SW4 (N88)
+     LUT5:I4->O            1   0.205   0.580  x4/x3/BUS_0049_PWR_7_o_equal_80_o<1> (x4/x3/BUS_0049_PWR_7_o_equal_80_o)
+     LUT3:I2->O            1   0.205   0.580  x4/x3/BUS_0055_PWR_7_o_equal_89_o<1>_SW4 (N92)
+     LUT5:I4->O            1   0.205   0.808  x4/x3/BUS_0055_PWR_7_o_equal_89_o<1> (x4/x3/BUS_0055_PWR_7_o_equal_89_o)
+     LUT5:I2->O            1   0.205   0.808  x4/x3/BUS_0059_PWR_7_o_equal_95_o<1>1 (x4/x3/BUS_0059_PWR_7_o_equal_95_o)
+     LUT6:I3->O            1   0.205   0.580  Mmux_LED85 (Mmux_LED84)
+     LUT6:I5->O            1   0.205   0.000  Mmux_LED86_G (N105)
+     MUXF7:I1->O           1   0.140   0.579  Mmux_LED86 (LED_7_OBUF)
+     OBUF:I->O                 2.571          LED_7_OBUF (LED<7>)
+    ----------------------------------------
+    Total                     26.837ns (9.408ns logic, 17.429ns route)
+                                       (35.1% logic, 64.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 36 / 8
+-------------------------------------------------------------------------
+Delay:               8.859ns (Levels of Logic = 6)
+  Source:            SW<1> (PAD)
+  Destination:       LED<6> (PAD)
+
+  Data Path: SW<1> to LED<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.222   1.210  SW_1_IBUF (SW_1_IBUF)
+     LUT3:I0->O            1   0.205   0.827  Mmux_LED71 (Mmux_LED7)
+     LUT6:I2->O            1   0.203   0.827  Mmux_LED72 (Mmux_LED71)
+     LUT6:I2->O            1   0.203   0.808  Mmux_LED78 (Mmux_LED77)
+     LUT3:I0->O            1   0.205   0.579  Mmux_LED710 (LED_6_OBUF)
+     OBUF:I->O                 2.571          LED_6_OBUF (LED<6>)
+    ----------------------------------------
+    Total                      8.859ns (4.609ns logic, 4.250ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |   11.278|    1.447|    1.833|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.21 secs
+ 
+--> 
+
+Total memory usage is 317360 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

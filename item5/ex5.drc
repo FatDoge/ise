@@ -1,0 +1,8 @@
+Release 14.4 Drc P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Mon May 22 11:39:46 2017
+
+drc -z Ex5.ncd Ex5.pcf
+
+DRC detected 0 errors and 0 warnings.

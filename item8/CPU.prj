@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/zl.v"
+verilog work "Reg.v"
+verilog work "qzl.v"
+verilog work "ALU.v"
+verilog work "CPU.v"

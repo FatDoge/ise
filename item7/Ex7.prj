@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/IM.v"
+verilog work "PC.v"
+verilog work "Ex7.v"

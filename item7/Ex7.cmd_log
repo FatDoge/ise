@@ -1,0 +1,141 @@
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+xst -intstyle ise -ifn "E:/ISEP2/Ex7/Ex7.xst" -ofn "E:/ISEP2/Ex7/Ex7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex7.ngc Ex7.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex7_map.ncd Ex7.ngd Ex7.pcf 
+par -w -intstyle ise -ol high -mt off Ex7_map.ncd Ex7.ncd Ex7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex7.twx Ex7.ncd -o Ex7.twr Ex7.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex7.ut Ex7.ncd 

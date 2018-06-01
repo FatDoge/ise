@@ -1,0 +1,45 @@
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Ex5.ngc Ex5_synthesis.v 
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Ex5.ngc Ex5_synthesis.v 
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Ex5.ngc Ex5_synthesis.v 
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Ex5.ngc Ex5_synthesis.v 
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Ex5.ngc Ex5_synthesis.v 
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Ex5.ngc Ex5_synthesis.v 
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Ex5.ngc Ex5_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex5.ngc Ex5.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex5_map.ncd Ex5.ngd Ex5.pcf 
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex5.ngc Ex5.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ex5_map.ncd Ex5.ngd Ex5.pcf 
+par -w -intstyle ise -ol high -mt off Ex5_map.ncd Ex5.ncd Ex5.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex5.twx Ex5.ncd -o Ex5.twr Ex5.pcf -ucf GJ.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Ex5.ngc Ex5_synthesis.v 
+bitgen -intstyle ise -f Ex5.ut Ex5.ncd 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex5_map.ncd Ex5.ngd Ex5.pcf 
+par -w -intstyle ise -ol high -mt off Ex5_map.ncd Ex5.ncd Ex5.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex5.twx Ex5.ncd -o Ex5.twr Ex5.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex5.ut Ex5.ncd 
+xst -intstyle ise -ifn "E:/ISEP2/Ex5/Ex5.xst" -ofn "E:/ISEP2/Ex5/Ex5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex5.ngc Ex5.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex5_map.ncd Ex5.ngd Ex5.pcf 
+par -w -intstyle ise -ol high -mt off Ex5_map.ncd Ex5.ncd Ex5.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex5.twx Ex5.ncd -o Ex5.twr Ex5.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex5.ut Ex5.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Ex5.ngc Ex5_synthesis.v 
+bitgen -intstyle ise -f Ex5.ut Ex5.ncd 
+xst -intstyle ise -ifn "D:/JZ_experiment/Ex5/Ex5.xst" -ofn "D:/JZ_experiment/Ex5/Ex5.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Ex5.ngc Ex5_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc GJ.ucf -p xc6slx16-csg324-3 Ex5.ngc Ex5.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -convert_bram8 -lc off -power off -o Ex5_map.ncd Ex5.ngd Ex5.pcf 
+par -w -intstyle ise -ol high -mt off Ex5_map.ncd Ex5.ncd Ex5.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ex5.twx Ex5.ncd -o Ex5.twr Ex5.pcf -ucf GJ.ucf 
+bitgen -intstyle ise -f Ex5.ut Ex5.ncd 
