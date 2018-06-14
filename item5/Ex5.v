@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Ex5(Add, SW, Write, Clk, LED);
+ module Ex5(Add, SW, Write, Clk, LED);
 input [5:0] Add;
 input [1:0] SW;
 input Write, Clk;

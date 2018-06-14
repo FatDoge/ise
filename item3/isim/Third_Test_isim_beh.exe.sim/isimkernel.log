@@ -2,14 +2,14 @@ Command line:
    Third_Test_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  8449
+     -socket  10087
 
-Fri May 04 20:27:19 2018
+Thu Jun 14 14:57:39 2018
 
 
- Elaboration Time: 0.15625 sec
+ Elaboration Time: 0.09375 sec
 
- Current Memory Usage: 5339.09 Meg
+ Current Memory Usage: 5339.01 Meg
 
  Total Signals          : 21
  Total Nets             : 64
@@ -20,9 +20,9 @@ Fri May 04 20:27:19 2018
  Total Traceable Variables  : 27
  Total Scalar Nets and Variables : 257
 
- Total Simulation Time: 0.265625 sec
+ Total Simulation Time: 0.125 sec
 
- Current Memory Usage: 5181.8 Meg
+ Current Memory Usage: 5181.73 Meg
 
-Fri May 04 20:31:09 2018
+Thu Jun 14 15:14:43 2018
 

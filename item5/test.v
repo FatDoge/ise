@@ -59,16 +59,12 @@ module test;
 		Clk = 1;
 		#100;
 		Clk = 0;
-		Write = 0;
-		SW = 2'b00;
-		Add = 6'b001100;
-		#100;
-		Clk = 1;
-		#100;
-		Clk = 0;
-		Add = 6'b001000;
-		#100;
-		Clk = 1;
+		Write=0;
+		#100
+		Clk=1;
+		#100
+		Clk=0;
+
 		// Add stimulus here
 
 	end

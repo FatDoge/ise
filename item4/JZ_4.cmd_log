@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "D:/JZ_experiment/JZ_4/JZ_4.xst" -ofn "D:/JZ_experiment/JZ_4/JZ_4.syr" 
+xst -intstyle ise -ifn "D:/JZ_experiment/JZ_4/JZ_4.xst" -ofn "D:/JZ_experiment/JZ_4/JZ_4.syr" 
+xst -intstyle ise -ifn "D:/JZ_experiment/JZ_4/JZ_4.xst" -ofn "D:/JZ_experiment/JZ_4/JZ_4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 JZ_4.ngc JZ_4.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o JZ_4_map.ncd JZ_4.ngd JZ_4.pcf 
+par -w -intstyle ise -ol high -mt off JZ_4_map.ncd JZ_4.ncd JZ_4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml JZ_4.twx JZ_4.ncd -o JZ_4.twr JZ_4.pcf 
+bitgen -intstyle ise -f JZ_4.ut JZ_4.ncd 
+xst -intstyle ise -ifn "D:/JZ_experiment/JZ_4/JZ_4.xst" -ofn "D:/JZ_experiment/JZ_4/JZ_4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc JZ_4.ucf -p xc6slx16-csg324-3 JZ_4.ngc JZ_4.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o JZ_4_map.ncd JZ_4.ngd JZ_4.pcf 
+par -w -intstyle ise -ol high -mt off JZ_4_map.ncd JZ_4.ncd JZ_4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml JZ_4.twx JZ_4.ncd -o JZ_4.twr JZ_4.pcf -ucf JZ_4.ucf 
+bitgen -intstyle ise -f JZ_4.ut JZ_4.ncd 

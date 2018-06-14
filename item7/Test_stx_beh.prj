@@ -1,5 +1,4 @@
-verilog isim_temp "ipcore_dir/IM.v"
 verilog isim_temp "PC.v"
 verilog isim_temp "Ex7.v"
 verilog isim_temp "Test.v"
-verilog isim_temp "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
+verilog isim_temp "E:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

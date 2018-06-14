@@ -43,6 +43,7 @@
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="Second_M.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Second_M.xst"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Second_M_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Second_M_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Second_M_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Second_M_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Second_M_map.ncd" xil_pn:subbranch="Map"/>
@@ -52,6 +53,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Second_M_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Second_M_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Second_M_par.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Second_M_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Second_M_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Second_M_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Second_M_usage.xml"/>
@@ -70,6 +72,7 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="second_m.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="second_m.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="second_m.drc" xil_pn:subbranch="FPGAConfiguration"/>
@@ -92,11 +95,11 @@
       <outfile xil_pn:name="Second_M.v"/>
       <outfile xil_pn:name="TEST.v"/>
     </transform>
-    <transform xil_pn:end_ts="1524828728" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7945656494574035127" xil_pn:start_ts="1524828728">
+    <transform xil_pn:end_ts="1528959212" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7945656494574035127" xil_pn:start_ts="1528959212">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1524828728" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6633084468471593355" xil_pn:start_ts="1524828728">
+    <transform xil_pn:end_ts="1528959212" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6633084468471593355" xil_pn:start_ts="1528959212">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -110,22 +113,26 @@
       <outfile xil_pn:name="Second_M.v"/>
       <outfile xil_pn:name="TEST.v"/>
     </transform>
-    <transform xil_pn:end_ts="1524828730" xil_pn:in_ck="3394874221384753936" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5757119842131357421" xil_pn:start_ts="1524828728">
+    <transform xil_pn:end_ts="1528959220" xil_pn:in_ck="3394874221384753936" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5757119842131357421" xil_pn:start_ts="1528959212">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TEST_beh.prj"/>
       <outfile xil_pn:name="TEST_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1524828731" xil_pn:in_ck="949238571752027247" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="9030259672703320432" xil_pn:start_ts="1524828730">
+    <transform xil_pn:end_ts="1528959220" xil_pn:in_ck="-9027455792148566714" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="9030259672703320432" xil_pn:start_ts="1528959220">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TEST_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1524829800" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1524829800">
       <status xil_pn:value="SuccessfullyRun"/>

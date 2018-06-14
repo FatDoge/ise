@@ -1,0 +1,4 @@
+verilog isim_temp "Registerfile.v"
+verilog isim_temp "JZ_4.v"
+verilog isim_temp "item4.v"
+verilog isim_temp "E:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"
