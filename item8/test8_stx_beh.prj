@@ -1,0 +1,8 @@
+verilog isim_temp "ipcore_dir/zl.v"
+verilog isim_temp "Reg.v"
+verilog isim_temp "qzl.v"
+verilog isim_temp "ALU.v"
+verilog isim_temp "CPU.v"
+verilog isim_temp "Top.v"
+verilog isim_temp "test8.v"
+verilog isim_temp "E:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

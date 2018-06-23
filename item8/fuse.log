@@ -1,0 +1,34 @@
+Running: E:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/fatdoge/Desktop/ise/item8/test8_isim_beh.exe -prj C:/Users/fatdoge/Desktop/ise/item8/test8_beh.prj work.test8 work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/fatdoge/Desktop/ise/item8/ipcore_dir/zl.v" into library work
+Analyzing Verilog file "C:/Users/fatdoge/Desktop/ise/item8/Reg.v" into library work
+Analyzing Verilog file "C:/Users/fatdoge/Desktop/ise/item8/qzl.v" into library work
+Analyzing Verilog file "C:/Users/fatdoge/Desktop/ise/item8/ALU.v" into library work
+Analyzing Verilog file "C:/Users/fatdoge/Desktop/ise/item8/CPU.v" into library work
+Analyzing Verilog file "C:/Users/fatdoge/Desktop/ise/item8/Top.v" into library work
+Analyzing Verilog file "C:/Users/fatdoge/Desktop/ise/item8/test8.v" into library work
+Analyzing Verilog file "E:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module zl
+Compiling module qzl
+Compiling module Reg
+Compiling module ALU
+Compiling module CPU
+Compiling module Top
+Compiling module test8
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\test8_isim_beh.exe.sim\libPortability.dll".
+Compiled 12 Verilog Units
+Built simulation executable C:/Users/fatdoge/Desktop/ise/item8/test8_isim_beh.exe
+Fuse Memory Usage: 32728 KB
+Fuse CPU Usage: 639 ms
